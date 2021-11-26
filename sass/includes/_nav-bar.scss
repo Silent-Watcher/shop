@@ -1,0 +1,54 @@
+#navbar{
+    // position: unset;
+    #ecommerce_top_navbar_content{
+        ul{
+            li{
+                position: unset;
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+        #navbarDropdown{
+           &::after{
+            vertical-align: -1px;
+           }
+        }
+    }
+    .home_products{
+        > img{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .inner_home_products{
+            .inner_home_products_right,.inner_home_products_left{
+                nav{
+                    a{
+                        font-size: 14px!important;
+                        transition: padding-right .4s ease;
+                        &:hover{
+                            padding-right: 20px;
+                            i{
+                                color: royalblue;
+                            }
+                        }
+                        i{
+                            font-size: 12px!important;
+                            margin-left: 5px;
+                            transition: color .4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Discount-top-navbar{
+       strong{
+        font-weight: normal;
+       }
+    }
+    .navbar-toggler_icon{
+        font-size: 25px;
+    }
+}

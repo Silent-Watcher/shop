@@ -1,0 +1,36 @@
+#header {
+  @media (min-width: 1200px) {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+      max-width: 1340px;
+    }
+  }
+  @media (min-width: 992px) {
+    .header_banner_1 {
+      flex-basis: 21.1%;
+      max-width: 21.1%;
+    }
+    .header_banner_2 {
+      flex-basis: 20.85%;
+      max-width: 20.85%;
+    }
+  }
+  @media (min-width: 992px) {
+    .carousel-wrapper {
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+  }
+  .header_banner_1,.header_banner_2{
+      img{
+          transition: filter .4s ease;
+          cursor: pointer;
+          &:hover{
+              filter: grayscale(80%);
+          }
+      }
+  }
+}

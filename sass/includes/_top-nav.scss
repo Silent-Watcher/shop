@@ -1,0 +1,113 @@
+.vertical-align-middle {
+  vertical-align: middle;
+}
+#top_nav {
+  .top-nav-right {
+    > p {
+      font-size: 14px;
+    }
+  }
+  .top-nav-left {
+    .nav {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+#top_nav_search {
+  .modal {
+    .close {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    [type="email"] {
+      &::placeholder {
+        font-size: 14px !important;
+        color: #757575;
+      }
+    }
+    .form-check-label {
+      font-size: 14px !important;
+      padding-top: 1px;
+    }
+    .modal-title {
+      margin-right: 175px;
+    }
+    .modal-body {
+      form {
+        label {
+          font-size: 15px;
+        }
+        input {
+          border-color: #efefefda;
+        }
+      }
+    }
+    .modal-footer {
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+  .top_nav_search_input::placeholder {
+    font-size: 13px !important;
+  }
+  .top-nav-dropdown-btn {
+    font-size: 14px;
+    &::after {
+      @extend .vertical-align-middle;
+      margin-right: 4px;
+    }
+  }
+  .top-nav-ct-btn {
+    font-size: 14px;
+  }
+}
+#top_nav_shop_basket-wrap {
+  .top_nav_shop_basket_btn {
+    i {
+      font-size: 20px !important;
+    }
+    &::after {
+      @extend .vertical-align-middle;
+    }
+  }
+  .top_nav_shop_basket-inner-section {
+    li {
+      list-style: none;
+      font-size: 12px !important;
+    }
+    width: 210px;
+    height: auto;
+    right: 80px;
+    top: 2px;
+    a {
+      img {
+        width: 65px;
+        height: 65px;
+      }
+    }
+    .top_nav_shop_basket-inner-close-btn {
+      transition: all 0.4s ease;
+    }
+    .dropdown-item {
+      transition: all 0.4s ease;
+    }
+  }
+}
+.top-nav-dropdown-categories {
+  transform: none !important;
+  width: 200px !important;
+  top: 45px !important;
+  right: -35px !important;
+  > .dropdown-item {
+    transition: all 0.4s ease;
+    &:hover {
+      color: royalblue;
+      background-color: #efefefb6 !important;
+    }
+  }
+}
